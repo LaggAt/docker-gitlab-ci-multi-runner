@@ -1,5 +1,25 @@
 # Changelog
 
+**11.3.1**
+  - bumped to runner 11.3.1
+
+**11.3.0**
+  - bumped to runner 11.3.0
+
+**10.7.0**
+  - bumped to runner 10.7.0
+  - added multiple volumes support
+
+**10.1.0**
+  - bumped to runner 10.1.0
+  - environment variable name changed
+
+**9.3.0**
+  - bumped to runner 9.3.0
+
+**9.3.0**
+  - bumped to runner 9.3.0
+
 **1.11.2**
   - bumped to runner 1.11.2 and sameersbn/ubuntu:14.04.20170228
 
