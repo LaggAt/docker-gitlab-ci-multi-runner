@@ -71,7 +71,7 @@ configure_ci_runner() {
       fi
       sudo -HEu ${GITLAB_CI_MULTI_RUNNER_USER} \
         gitlab-ci-multi-runner register --config ${GITLAB_CI_MULTI_RUNNER_DATA_DIR}/config.toml \
-          -non-interactive -url "${CI_SERVER_URL}" -registration-token "${RUNNER_TOKEN}" --name "${RUNNER_DESCRIPTION}" --executor "${RUNNER_EXECUTOR}" --output-limit "${RUNNER_OUTPUT_LIMIT}" ${RUNNER_DOCKER_ARGS}
+          --non-interactive --url "${CI_SERVER_URL}" --registration-token "${RUNNER_TOKEN}" --name "${RUNNER_DESCRIPTION}" --executor "${RUNNER_EXECUTOR}" --output-limit "${RUNNER_OUTPUT_LIMIT}" ${RUNNER_DOCKER_ARGS}
     else
       sudo -HEu ${GITLAB_CI_MULTI_RUNNER_USER} \
         gitlab-ci-multi-runner register --config ${GITLAB_CI_MULTI_RUNNER_DATA_DIR}/config.toml
